@@ -1,4 +1,5 @@
 import scrapy
+from items import LiemingrenItem
 
 class Skj520Spider(scrapy.Spider):
     name = "skj520"
@@ -8,3 +9,5 @@ class Skj520Spider(scrapy.Spider):
     def parse(self, response,**kwargs):
         list_items = response.xpath('//*[@id="content"]/text()')
         my_item = LiemingrenItem()
+        my_item['name'] = list_items.xpath('//*[@id="content"]::text()').extract()
+        yield my_item
