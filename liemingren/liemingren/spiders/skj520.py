@@ -9,7 +9,8 @@ class Skj520Spider(scrapy.Spider):
     def parse(self, response,**kwargs):
         list_items = response.xpath('//*[@id="content"]/text()')
         my_item = liemingrenItem()
-        my_item['name'] = list_items.xpath('//*[@id="content"]::text()').extract()
+        my_item['data'] = list_items.xpath('//*[@id="content"]/text()').extract()
+        print("hi",my_item['data'])
         yield my_item
         href = response.css('#wrapper > div.book.reader > div.content > div.page_chapter > ul > li:nth-child(3) > a')
         url = response.urljoin(href.extract())

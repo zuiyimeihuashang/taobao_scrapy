@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f700dfec-151b-47a4-8a5d-fc3e75da3fc3" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liemingren/liemingren/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/liemingren/liemingren/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liemingren/liemingren/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/liemingren/liemingren/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liemingren/liemingren/spiders/skj520.py" beforeDir="false" afterPath="$PROJECT_DIR$/liemingren/liemingren/spiders/skj520.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
