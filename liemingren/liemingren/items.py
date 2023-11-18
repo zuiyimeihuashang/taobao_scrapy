@@ -6,7 +6,5 @@
 import scrapy
 
 
-class LiemingrenItem(scrapy.Item):
-    # define the fields for your item here like:
-    item = Movie
+class liemingrenItem(scrapy.Item):
     data = scrapy.Field()
