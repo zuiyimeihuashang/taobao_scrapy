@@ -13,20 +13,19 @@ SPIDER_MODULES = ["liemingren.spiders"]
 NEWSPIDER_MODULE = "liemingren.spiders"
 
 
-# Crawl responsibly by identifying yourself (and your website) on the user-agent：请求头
+# Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
-# Configure maximum concurrent requests performed by Scrapy (default: 16)并发数量
+# Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 1 #下载延时
-RANOOMIZE_DOWNLOAD_DELAY = True #延时是否随机
+DOWNLOAD_DELAY = 1
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -64,7 +63,7 @@ RANOOMIZE_DOWNLOAD_DELAY = True #延时是否随机
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
- #   "liemingren.pipelines.LiemingrenPipeline": 300,
+#    "liemingren.pipelines.LiemingrenPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

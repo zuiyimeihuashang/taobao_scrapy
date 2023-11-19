@@ -6,5 +6,6 @@
 import scrapy
 
 
-class liemingrenItem(scrapy.Item):
-    data = scrapy.Field()
+class LiemingrenItem(scrapy.Item):
+    # define the fields for your item here like:
+    book = scrapy.Field()

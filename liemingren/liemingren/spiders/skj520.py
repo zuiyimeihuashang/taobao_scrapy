@@ -1,5 +1,5 @@
 import scrapy
-from liemingren.liemingren.items import liemingrenItem
+from liemingren.items import LiemingrenItem
 
 class Skj520Spider(scrapy.Spider):
     name = "skj520"
@@ -8,10 +8,10 @@ class Skj520Spider(scrapy.Spider):
 
     def parse(self, response,**kwargs):
         list_items = response.xpath('//*[@id="content"]/text()')
-        my_item = liemingrenItem()
-        my_item['data'] = list_items.xpath('//*[@id="content"]/text()').extract()
+        my_item = LiemingrenItem()
+        my_item['book'] = list_items.xpath('//*[@id="content"]/text()').extract()
         yield my_item
         href = response.css('//*[@id="wrapper"]/div[5]/div[2]/div[3]/ul/li[3]/a')
         url = response.urljoin(href.extract_first())
-        yield scrapy.Request(url=url)  
+        yield  scrapy.Request(url=url)  
         
