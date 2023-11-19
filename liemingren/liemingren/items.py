@@ -9,3 +9,4 @@ import scrapy
 class LiemingrenItem(scrapy.Item):
     # define the fields for your item here like:
     book = scrapy.Field()
+    urln = scrapy.Field()
