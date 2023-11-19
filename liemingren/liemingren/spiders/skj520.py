@@ -11,7 +11,7 @@ class Skj520Spider(scrapy.Spider):
         my_item = liemingrenItem()
         my_item['data'] = list_items.xpath('//*[@id="content"]/text()').extract()
         yield my_item
-        href = response.css('#wrapper > div.book.reader > div.content > div.page_chapter > ul > li:nth-child(3) > a')
-        url = response.urljoin(href.extract())
+        href = response.css('//*[@id="wrapper"]/div[5]/div[2]/div[3]/ul/li[3]/a')
+        url = response.urljoin(href.extract_first())
         yield scrapy.Request(url=url)  
         
