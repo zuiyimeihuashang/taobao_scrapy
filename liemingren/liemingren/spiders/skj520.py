@@ -21,6 +21,7 @@ class Skj520Spider(scrapy.Spider):
         if new_urls != []:
             for new_url in new_urls:
                 new_url = response.urljoin(new_url.xpath('@href').extract_first())
+                #new_url = response.urljoin(new_url.xpath('@href').extract())
                 print("---------------------------------------------------------------------")
                 print(new_url)
                 print("---------------------------------------------------------------------")
