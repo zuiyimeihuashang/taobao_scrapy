@@ -29,5 +29,5 @@ class Skj520Spider(scrapy.Spider):
     def xqy_parse(self,resopnse):
         items = LiemingrenItem()
         items['book'] = resopnse.xpath('//*[@class="showtxt"]/text()').extract()
-        items['title'] = resopnse.xpath('//*[@class="p"]//text()[2]').extract()
+        items['title'] = resopnse.xpath('//*[@class="p"]//text()[2]').extract_first()
         yield items
