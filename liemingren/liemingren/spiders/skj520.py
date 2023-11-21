@@ -9,10 +9,6 @@ class Skj520Spider(scrapy.Spider):
 
     def parse(self, response,**kwargs):
 
-        # html_content = response.text
-        # # 将HTML内容写入文件
-        # with open('new_file.html', 'w', encoding='utf-8') as file:
-        #     file.write(html_content)
         new_urls = response.xpath('//*[@class="listmain"]/dl/dd/a')
         #print(response.xpath('/html/body/div[6]/dl/dd[67]/a/@href').extract_first())
         print("---------------------------------------------------------------------")
