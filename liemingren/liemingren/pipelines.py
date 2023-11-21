@@ -10,7 +10,7 @@ from itemadapter import ItemAdapter
 import csv
 class LiemingrenPipeline:
     def process_item(self, item, spider):
-        with open('G:\scrapy\liemingren\data%s.csv'%(item['title']), 'w', encoding='utf-8',newline='') as fp:
+        with open('G:\scrapy\liemingren\data\%s.csv'%(item['title']), 'w', encoding='utf-8',newline='') as fp:
             write = csv.writer(fp)
             write.writerow(item['book'])
         return item
