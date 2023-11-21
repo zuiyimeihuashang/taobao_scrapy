@@ -11,17 +11,10 @@ class Skj520Spider(scrapy.Spider):
 
         new_urls = response.xpath('//*[@class="listmain"]/dl/dd/a')
         #print(response.xpath('/html/body/div[6]/dl/dd[67]/a/@href').extract_first())
-        print("---------------------------------------------------------------------")
-        print(new_urls,len(new_urls))
-        print("---------------------------------------------------------------------")
         if new_urls != []:
             for new_url in new_urls:
                 new_url = response.urljoin(new_url.xpath('@href').extract_first())
                 #new_url = response.urljoin(new_url.xpath('@href').extract())
-                print("---------------------------------------------------------------------")
-                print(new_url)
-                print("---------------------------------------------------------------------")
-                print("\n")
                 yield scrapy.Request(url= new_url,callback=self.xqy_parse)
         else:
             print("NULL\n")
@@ -29,5 +22,8 @@ class Skj520Spider(scrapy.Spider):
     def xqy_parse(self,resopnse):
         items = LiemingrenItem()
         items['book'] = resopnse.xpath('//*[@class="showtxt"]/text()').extract()
-        items['title'] = resopnse.xpath('//*[@class="p"]//text()[2]').extract_first()
+        items['title'] = resopnse.xpath('//*[@class="content"]/h1/text()').extract_first()
+        print("---------------------------------------------------------------------")
+        print("title:%s" % (items['title']))
+        print("---------------------------------------------------------------------")
         yield items

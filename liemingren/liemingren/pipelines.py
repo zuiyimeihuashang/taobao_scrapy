@@ -10,7 +10,12 @@ from itemadapter import ItemAdapter
 import csv
 class LiemingrenPipeline:
     def process_item(self, item, spider):
-        with open('G:\scrapy\liemingren\data\%s.csv'%(item['title']), 'w', encoding='utf-8',newline='') as fp:
+        item['title'] = item['title'].strip() #；因为字符串不可变，故需要重新赋值。
+        item['title'] = item['title'].replace(" ","_")#tiele不是title，拼写错误会导致键不存在。
+        print("--------------------------------------------------------")
+        print(item['title'])
+        print("--------------------------------------------------------")
+        with open('G:/scrapy/liemingren/data/%s.csv' % (item['title']), 'w', encoding='utf-8',newline='') as fp:
             write = csv.writer(fp)
-            write.writerow(item['book'])
-        return item
+            write.writerows(item['book'])
+        #return item
