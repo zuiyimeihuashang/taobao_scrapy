@@ -15,7 +15,9 @@ class LiemingrenPipeline:
         print("--------------------------------------------------------")
         print(item['title'])
         print("--------------------------------------------------------")
-        with open('G:/scrapy/liemingren/data/%s.csv' % (item['title']), 'w', encoding='utf-8',newline='') as fp:
-            write = csv.writer(fp)
-            write.writerows(item['book'])
+        with open('G:/scrapy/liemingren/data/%s.txt' % (item['title']), 'w', encoding='utf-8',newline='') as fp:
+            item['book'] = [str(item) for item in item['book']]
+            fp.write('\n'.join(item['book']))
+            #write = csv.writer(fp)
+            #write.writerows(item['book'])
         #return item
