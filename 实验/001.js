@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         贵州民族大学校园网快速自动登录脚本
 // @namespace    https://github.com/zuiyimeihuashang/taobao_scrapy/blob/master/%E5%AE%9E%E9%AA%8C/001.js
-// @version      1.1
+// @version      1.2
 // @description  ECUT校园网自动登录脚本
 // @author       inventor
 // @match        http://10.101.6.51/a79.html
@@ -12,8 +12,8 @@
 
 /* globals jQuery, $, waitForKeyElements */
 
-var username = "202242100136"; // 学号
-var password = "230098"; // 密码
+var username = "2022XXXXX"; // 学号
+var password = "23XXXX"; // 密码
 var port = 2; // 0办公网，1学生内网，2中国移动，3中国电信
 
 (function() {
