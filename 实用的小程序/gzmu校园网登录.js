@@ -1,19 +1,18 @@
 // ==UserScript==
 // @name         贵州民族大学校园网快速自动登录脚本
-// @namespace    https://github.com/zuiyimeihuashang/taobao_scrapy/blob/master/%E5%AE%9E%E7%94%A8%E7%9A%84%E5%B0%8F%E7%A8%8B%E5%BA%8F/gzmu%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%99%BB%E5%BD%95.js
-// @version      1.1
+// @namespace    https://github.com/zuiyimeihuashang/taobao_scrapy/blob/master/%E5%AE%9E%E9%AA%8C/001.js
+// @version      1.2
 // @description  ECUT校园网自动登录脚本
 // @author       inventor
-// @match        http://10.101.6.51/a79.htm
+// @match        *://*.101.6.51/a79.htm*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=79.141
 // @grant        unsafeWindow
 // @license MIT
 // ==/UserScript==
 
 /* globals jQuery, $, waitForKeyElements */
-
 var username = "2022XXXX"; // 学号
-var password = "23XXXX"; // 密码
+var password = "2XXXX"; // 密码
 var port = 2; // 0办公网，1学生内网，2中国移动，3中国电信
 
 (function() {
