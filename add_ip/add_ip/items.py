@@ -6,7 +6,7 @@
 import scrapy
 
 
-class DialiipItem(scrapy.Item):
+class AddIpItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

@@ -1,4 +1,4 @@
-# Scrapy settings for dialiip project
+# Scrapy settings for add_ip project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "dialiip"
+BOT_NAME = "add_ip"
 
-SPIDER_MODULES = ["dialiip.spiders"]
-NEWSPIDER_MODULE = "dialiip.spiders"
+SPIDER_MODULES = ["add_ip.spiders"]
+NEWSPIDER_MODULE = "add_ip.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "dialiip (+http://www.yourdomain.com)"
+#USER_AGENT = "add_ip (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "dialiip.middlewares.DialiipSpiderMiddleware": 543,
+#    "add_ip.middlewares.AddIpSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "dialiip.middlewares.DialiipDownloaderMiddleware": 543,
+#    "add_ip.middlewares.AddIpDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "dialiip.pipelines.DialiipPipeline": 300,
+#    "add_ip.pipelines.AddIpPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
