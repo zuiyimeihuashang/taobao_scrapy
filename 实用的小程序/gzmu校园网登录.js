@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         贵州民族大学校园网快速自动登录脚本
-// @namespace    https://github.com/zuiyimeihuashang/taobao_scrapy/blob/master/%E5%AE%9E%E9%AA%8C/001.js
+// @namespace    https://github.com/zuiyimeihuashang/taobao_scrapy/blob/master/%E5%AE%9E%E7%94%A8%E7%9A%84%E5%B0%8F%E7%A8%8B%E5%BA%8F/gzmu%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%99%BB%E5%BD%95.js
 // @version      1.1
 // @description  ECUT校园网自动登录脚本
 // @author       inventor
