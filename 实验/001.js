@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         贵州民族大学校园网快速自动登录脚本
-// @namespace    https://github.com/wobisheng/tampermonkey_ntu_faskauto_login
+// @namespace    https://github.com/zuiyimeihuashang/taobao_scrapy/blob/master/%E5%AE%9E%E9%AA%8C/001.js
 // @version      1.1
 // @description  ECUT校园网自动登录脚本
 // @author       inventor
