@@ -4,16 +4,18 @@
 // @version      1.1
 // @description  ECUT校园网自动登录脚本
 // @author       inventor
-// @match        http://10.101.6.51/a79.html
+// @match        http://10.101.6.51/a79.htm
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=79.141
 // @grant        unsafeWindow
+// @require https://code.jquery.com/jquery-3.6.4.min.js
 // @license MIT
 // ==/UserScript==
- 
-var username = "2021***"//学号
-var password = "***"//密码
+
+/* globals jQuery, $, waitForKeyElements */
+var username = "2022XXX"//学号
+var password = "XXXXXX"//密码
 var port = 2;//0办公网，1学生内网，2中国移动，3中国电信
- 
+
 (function() {
   // 定义一个数组，包含用于选择运营商的input元素的选择器
     var _port_text = ["input[value='@xyw']","input[value='']","input[value='@yd']","input[value='@lt']"];
@@ -23,7 +25,4 @@ var port = 2;//0办公网，1学生内网，2中国移动，3中国电信
     $(_port_text[port]).click();//$(_port_text[port]).attr('checked',true);//选择运行商
     $("input[name='DDDDD']").val(username);// 设置input[name='DDDDD']元素的值，即用户名
     $("input[name='upass']").val(password);// 设置input[name='upass']元素的值，即密码
-    $("input[name='0MKKey']").click();// 点击input[name='0MKKey']元素，模拟用户输入密码
-    }, false);
-
-})();
+    $("input[name='0MKKey']").click();// 点击input[name='0MKKey']元素，模拟登录操作。
