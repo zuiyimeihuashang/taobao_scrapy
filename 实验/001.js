@@ -25,4 +25,5 @@ var port = 2;//0办公网，1学生内网，2中国移动，3中国电信
     $("input[name='upass']").val(password);// 设置input[name='upass']元素的值，即密码
     $("input[name='0MKKey']").click();// 点击input[name='0MKKey']元素，模拟用户输入密码
     }, false);
+
 })();
