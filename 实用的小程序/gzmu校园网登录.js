@@ -13,7 +13,7 @@
 /* globals jQuery, $, waitForKeyElements */
 
 var username = "2022XXXXX"; // 学号
-var 密码 = "23XXXX"; // 密码
+var password = "23XXXX"; // 密码
 var port = 2; // 0办公网，1学生内网，2中国移动，3中国电信
 
 (function() {
@@ -22,10 +22,10 @@ var port = 2; // 0办公网，1学生内网，2中国移动，3中国电信
 
     // 添加一个load事件监听器，用于在页面加载完成后执行以下操作
     window.addEventListener('load', function() {
-        $(portSelectors[port])。click(); // 选择运行商
-        $("input[name='DDDDD']")。val(username); // 设置 input[name='DDDDD'] 元素的值，即用户名
-        $("input[name='upass']")。val(密码); // 设置 input[name='upass'] 元素的值，即密码
-        $("input[name='0MKKey']")。click(); // 点击 input[name='0MKKey'] 元素，模拟用户登录
+        $(portSelectors[port]).click(); // 选择运行商
+        $("input[name='DDDDD']").val(username); // 设置 input[name='DDDDD'] 元素的值，即用户名
+        $("input[name='upass']").val(password); // 设置 input[name='upass'] 元素的值，即密码
+        $("input[name='0MKKey']").click(); // 点击 input[name='0MKKey'] 元素，模拟用户登录
     }, false);
 })();
 /*
