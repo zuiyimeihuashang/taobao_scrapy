@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         贵州民族大学校园网快速自动登录脚本
 // @namespace    https://github.com/zuiyimeihuashang/taobao_scrapy/blob/master/%E5%AE%9E%E7%94%A8%E7%9A%84%E5%B0%8F%E7%A8%8B%E5%BA%8F/gzmu%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%99%BB%E5%BD%95.js
-// @version      1.2
+// @version      1.3
 // @description  ECUT校园网自动登录脚本
 // @author       inventor
 // @match        http://10.101.6.51/a79.html
@@ -26,6 +26,6 @@ var port = 2; // 0办公网，1学生内网，2中国移动，3中国电信
         $(portSelectors[port]).click(); // 选择运行商
         $("input[name='DDDDD']").val(username); // 设置 input[name='DDDDD'] 元素的值，即用户名
         $("input[name='upass']").val(password); // 设置 input[name='upass'] 元素的值，即密码
-        $("input[name='0MKKey']").click(); // 点击 input[name='0MKKey'] 元素，模拟用户输入密码
+        $("input[name='0MKKey']").click(); // 点击 input[name='0MKKey'] 元素，模拟用户登录
     }, false);
 })();
