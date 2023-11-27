@@ -4,7 +4,7 @@
 // @version      1.2
 // @description  ECUT校园网自动登录脚本
 // @author       inventor
-// @match        http://10.101.6.51/a79.html
+// @match        http://10.101.6.51/a79.htm
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=79.141
 // @grant        unsafeWindow
 // @license MIT
