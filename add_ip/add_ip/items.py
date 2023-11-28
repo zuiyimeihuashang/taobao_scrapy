@@ -7,4 +7,4 @@ import scrapy
 
 
 class AddIpItem(scrapy.Item):
-    ip = scrapy.Field()
+    ipzdy = scrapy.Field()
