@@ -10,4 +10,4 @@ from itemadapter import ItemAdapter
 
 class AddIpPipeline:
     def process_item(self, item, spider):
-        return item
+        print(item)
