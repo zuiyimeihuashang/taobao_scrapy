@@ -29,6 +29,7 @@ LOG_LEVEL = 'ERROR'
 # See also autothrottle settings and docs
 RANDOMIZE_DOWNLOAD_DELAY = True
 DOWNLOAD_DELAY = 3
+RETRY_TIMES = 5 #重试次数
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -90,7 +91,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_ENABLED = True
 #HTTPCACHE_EXPIRATION_SECS = 0
 #HTTPCACHE_DIR = "httpcache"
-#HTTPCACHE_IGNORE_HTTP_CODES = []
+HTTPCACHE_IGNORE_HTTP_CODES = [500,503,504,400,403,404,408,429]
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value
