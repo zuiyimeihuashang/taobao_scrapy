@@ -11,7 +11,7 @@ class ZdayeSpider(scrapy.Spider):
         datas = response.xpath('//*[@id="ipc"]/tbody/tr/td[1]')
         for data in datas:
             items = AddIpItem()
-            items[ip_zdy] = "http://" + str(data.xpath("./text()").extract_first())
+            items["ip_zdy"] = "http://" + str(data.xpath("./text()").extract_first())
             yield items
         print("---------------------------------------------------------")
         for i in range(2,11):
