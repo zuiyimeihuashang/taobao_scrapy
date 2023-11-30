@@ -47,6 +47,7 @@ DEFAULT_REQUEST_HEADERS = {
     "Connection": "keep-alive",
     "Accept-Encoding": "gzip, deflate, br",
     "Cache-Control": "max-age=0",
+    "Referer": "https://webpage.qidian.qq.com/qidian/chatv3/pc.html"
 }
 
 # Enable or disable spider middlewares
