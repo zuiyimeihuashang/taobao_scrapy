@@ -15,4 +15,4 @@ class ZdayeSpider(scrapy.Spider):
             yield items
         print("---------------------------------------------------------")
         for i in range(2,11):
-            yield scrapy.Request(url =( "https://www.zdaye.com/free/%d/" % i),callback=self.parse)
+            yield scrapy.Request(url =( "https://www.zdaye.com/free/%d/" % i),callback=self.parse
