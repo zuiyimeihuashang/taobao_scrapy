@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d6656de-4561-4b95-ad06-5d709677357e" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_ip/spiders/zdaye.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_ip/spiders/zdaye.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../实验/002.py" beforeDir="false" afterPath="$PROJECT_DIR$/../实验/002.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "G:/scrapy",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
