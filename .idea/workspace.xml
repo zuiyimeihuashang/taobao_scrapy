@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="199d33f1-a17d-4c55-bd54-4f32b639f4b3" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_ip/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/add_ip/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/实验/002.py" beforeDir="false" afterPath="$PROJECT_DIR$/实验/002.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,5 +67,26 @@
       <updated>1700374285387</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/实验/002.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/实验/002.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="2 ** (i + 1)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
