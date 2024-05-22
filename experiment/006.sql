@@ -1,25 +1,11 @@
-SELECT book_name 
-    FROM 
-	    (
-            SELECT t_book.book_name,c.num FROM 
-                (SELECT book_id,COUNT(*) as num 
-                        FROM t_borrow 
-                        LEFT JOIN t_reader 
-                        on t_borrow.reader_id=t_reader.reader_id 
-                        WHERE gender='女' 
-                        GROUP BY book_id
-                )as c 
-            left join t_book on c.book_id=t_book.book_id
-        ) as d 
-	WHERE d.num = 
-        (
-            SELECT MAX(e.num) FROM 
-                (SELECT book_id,COUNT(*) as num 
-                        FROM t_borrow 
-                        LEFT JOIN t_reader 
-                        on t_borrow.reader_id=t_reader.reader_id 
-                        WHERE gender='女' 
-                        GROUP BY book_id
-                )as e 
-        )
-;
+CREATE DEFINER=`skip-grants user`@`skip-grants host` FUNCTION `check_num`(book_name varchar(20)) RETURNS char(11) CHARSET utf8mb4 COLLATE utf8mb4_vietnamese_ci
+BEGIN
+declare singer int;
+set singer = (select sum(num) from t_book where book_name = book_name);
+-- RETURN singer;
+if singer > 0 then
+return 'YES';
+else
+return 'NO';
+end if;
+END
